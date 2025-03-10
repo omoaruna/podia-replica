@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    color: #1F1737;
+    background: #E6D6F5;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    
+}
+body > * {
+    width: 90%;
+    margin: 0 auto;
+}
+button{
+    background-color: #1F1737;
+    color: #E6D6F5;
+    font-size: 1rem ;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+    font-size: 1rem;
+    
+}
+.links {
+    display: flex;
+    
+}
+ul.left-links,
+.right-links{
+    display: flex;
+    align-items: center;
+    list-style-type:none ;
+    gap: 30px;
+}
+.left-links{
+    margin-right: auto;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 900;
+}
+/* end of nav style */
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+    flex:0 1 60%;
+    text-align: center;
+    
+    
+}
+.hero-content h1{
+    font-size: 3rem;
+    width: 85%;
+}
+.hero-content p:nth-of-type(1){
+    font-size: 1.4rem;
+    width: 70%;
+}
+.hero-content button{
+    padding: 15px;
+    align-self: center;
+}
+/* Cards styling */
+.card-container ul{
+    list-style-type: none;
+    margin-left: 5px;
+    line-height: 2;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-container .plans{
+    flex: 1 100%;
+    display: flex;
+    
+}
+.plans > *{
+    flex:1;
+    line-height: 1.5;  
+    padding: 20px; 
+}
+.card-container .card-one{
+    background-color: #E29A4C;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+    
+}
+.card-container .card-two{
+    background-color: #CCB0EB;
+    
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card-container .card-three{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    line-height: 1.5;
+    flex:1;
+}
+
+.card-one,
+.card-two,
+.card-three {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card.card-content{
+    display: flex;
+    justify-content: space-between;
+}
