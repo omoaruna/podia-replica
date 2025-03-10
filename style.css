@@ -139,3 +139,40 @@ ul.left-links,
     display: flex;
     justify-content: space-between;
 }
+@media(max-width: 425px){
+    nav{
+        display: none;
+    }
+
+    .card-container,
+    .card-container > *{
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+    .plans{
+        width: 100%;
+        border: transparent;
+        border-radius: 15px;
+        gap: 8px;
+    }
+    .hero-content h1,
+    .hero-content p:nth-of-type(1){
+        width : 100%;
+    }
+}
+
+@media(max-width: 770px){
+    nav{
+        display: none;
+    }
+    .card-container{
+        flex-direction: column;
+    }
+    .card.card-content{
+        gap: 25px;
+    }
+    .hero-content{
+        width: 100%;
+    }
+}
